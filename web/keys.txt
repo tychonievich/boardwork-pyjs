@@ -1,0 +1,42 @@
+` color #000
+1 color #f00
+2 color #33f
+3 color #080
+4 color #80f
+5 color #840
+6 color #f90
+7 color #9f0
+8 color #fae
+9 color #ee0
+0 color #fff
+default color #000
+
+t toggle_hud
+i invert_colors
+
+b softness 1
+n softness 2
+m softness 0.5
+default softness 1
+
+p putimage
+
+_ zoom 1.2599210498948732
++ zoom 0.7937005259840998
+
+- pensize 0.7937005259840998
+= pensize 1.2599210498948732
+default pensize 3
+
+Ctrl+Home pensize reset
+Ctrl+Home zoom reset
+Ctrl+Home pan reset
+Home zoom reset
+Home pan reset
+
+Alt+PageUp clone back
+Shift+PageUp insert back
+PageUp go back
+Alt+PageDown clone forward
+Shift+PageDown insert forward
+PageDown go forward

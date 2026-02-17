@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Tablet Presentation</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%20-12%2014%2012%22%3E%3Ctext%20fill%3D%22pink%22%3E%E2%9C%8D%3C%2Ftext%3E%3C%2Fsvg%3E">
+<script src="boardwork.js"></script>
+<script defer>
+var clocktick = e=>{document.getElementById('time').innerHTML = new Date().toLocaleTimeString().split(':').slice(0,2).join(':')};
+var clock = setInterval(clocktick, 10000)
+window.addEventListener('load',e=>{ clocktick(); document.querySelectorAll('canvas').forEach(c=>c.tool=new LiveBoardSet(c)); })
+</script>
+</head><body><canvas></canvas><div id="hud"><div id="page">1 of 1</div><svg id="cursor" viewBox="-1 -1 2 2" fill="#000" style="height:0.5555vh"><circle cx="0" cy="0" r="1"/></svg><div id="time">HH:MM</div></div></body></html>
