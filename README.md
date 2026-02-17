@@ -10,6 +10,9 @@ To run it
 3. Navigate to <http://[::1]:44008> in your browser of choice
 4. Use a stylus in the window
 
+> [!NOTE]
+> I find that running this under X11 (with any browser) it lags noticeably, but under Wayland it does not. I do not use, and cannot speak to the efficiency of, the display protocols used bundled in operating systems created by Microsoft, Apple, and Google.
+
 A log of your actions will be made in a `.json` file storing newline-delimited JSON as you write and draw.
 When the browser page closes a PDF copy of the entire session will be generated as well.
 
